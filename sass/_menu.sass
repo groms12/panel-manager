@@ -1,0 +1,66 @@
+.menu
+    padding: 16px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    height: 100vh
+    width: 64px
+    overflow: hidden
+    position: fixed
+    top: 0
+    left: 0
+    bottom: 0
+    background: rgba(255, 255, 255, 0.4)
+    backdrop-filter: blur(7.25px)
+    p
+        display: none
+    &--active
+        width: 260px
+        p
+            display: block
+    &__items
+        margin-top: 16px
+        li
+            ul
+                display: none
+                margin-top: 4px
+                padding-left: 48px
+            ul.list--active
+                display: block
+    &__item
+        display: flex
+        align-items: center
+        justify-content: start
+        border-radius: 6px
+        padding: 4px
+        svg, img
+            margin-right: 24px
+            width: 24px
+            // width: 18px
+            // height: 18px
+            object-fit: cover
+            fill: $icon-gray
+        &:hover, &--active
+            background-color: $light-orange
+            transition: all .3s
+            svg, img
+                fill: $orange
+    &__icon
+        display: flex
+        flex-direction: column
+        grid-gap: 4px
+        margin-right: 28px
+        margin-left: 4px
+        span
+            background-color: $icon-gray
+            border-radius: 100px
+            width: 18px
+            height: 2px
+        &--active
+            span:nth-child(2)
+                display: none
+            span:first-child
+                transform: rotate(-45deg)
+            span:last-child
+                transform: rotate(45deg)
+                margin-top: -6px
