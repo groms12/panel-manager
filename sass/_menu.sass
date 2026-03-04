@@ -4,7 +4,7 @@
     flex-direction: column
     justify-content: space-between
     height: 100vh
-    width: 64px
+    width: 72px
     overflow: hidden
     position: fixed
     top: 0
@@ -14,6 +14,7 @@
     backdrop-filter: blur(7.25px)
     p
         display: none
+        margin-left: 18px
     &--active
         width: 260px
         p
@@ -24,32 +25,31 @@
             ul
                 display: none
                 margin-top: 4px
-                padding-left: 48px
+                padding-left: 30px
             ul.list--active
                 display: block
-    &__item
+    &__item, &__open
         display: flex
         align-items: center
         justify-content: start
         border-radius: 6px
         padding: 4px
-        svg, img
-            margin-right: 24px
-            width: 24px
-            // width: 18px
-            // height: 18px
-            object-fit: cover
+        min-height: 32px
+        svg
             fill: $icon-gray
+            width: 18px
+            margin-left: 6px
+            margin-right: 4px
         &:hover, &--active
             background-color: $light-orange
             transition: all .3s
-            svg, img
+            svg
                 fill: $orange
     &__icon
         display: flex
         flex-direction: column
         grid-gap: 4px
-        margin-right: 28px
+        margin-right: 4px
         margin-left: 4px
         span
             background-color: $icon-gray
