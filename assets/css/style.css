@@ -76,6 +76,7 @@ a {
   border-radius: 6px;
   padding: 4px;
   min-height: 32px;
+  cursor: pointer;
 }
 .menu__item svg, .menu__open svg {
   fill: #83909A;
