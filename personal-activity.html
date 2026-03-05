@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Активность пользователей</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <section class="menu">
+        <div class="menu__up">
+            <div class="menu__open">
+                <div class="menu__icon"><span></span><span></span><span></span></div>
+                <p class="menu__link">Меню</p>
+            </div>
+            <ul class="menu__items">
+                <li>
+                    <a href="#" class="menu__item">
+                        <svg class="icon" viewBox="0 0 512 512">
+                            <use xlink:href="assets/img/svg/sprite.svg#home"></use>
+                        </svg>
+                        <p class="menu__link">Главная</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu__item">
+                        <svg class="icon" viewBox="0 0 512 512">
+                            <use xlink:href="assets/img/svg/sprite.svg#client"></use>
+                        </svg>
+                        <p class="menu__link">Мои клиенты</p>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="#" class="menu__item">
+                                <p class="menu__link">Мой офис</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__item">
+                                <p class="menu__link">Мой город</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__item">
+                                <p class="menu__link">Поиск клиента</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__item">
+                                <p class="menu__link">База заказов</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__item">
+                                <p class="menu__link">Отправить смс</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__item">
+                                <p class="menu__link">Передать ответственность</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="menu__item">
+                        <svg class="icon" viewBox="0 0 512 512">
+                            <use xlink:href="assets/img/svg/sprite.svg#calendar"></use>
+                        </svg>
+                        <p class="menu__link">График встреч</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu__item">
+                        <svg class="icon" viewBox="0 0 512 512">
+                            <use xlink:href="assets/img/svg/sprite.svg#star"></use>
+                        </svg>
+                        <p class="menu__link">Доска почета</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu__item">
+                        <svg class="icon" viewBox="0 0 512 512">
+                            <use xlink:href="assets/img/svg/sprite.svg#switch"></use>
+                        </svg>
+                        <p class="menu__link">Воронка</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu__item">
+                        <svg class="icon" viewBox="0 0 512 512">
+                            <use xlink:href="assets/img/svg/sprite.svg#graphic"></use>
+                        </svg>
+                        <p class="menu__link">Статистика</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu__item">
+                        <svg class="icon" viewBox="0 0 512 512">
+                            <use xlink:href="assets/img/svg/sprite.svg#settings"></use>
+                        </svg>
+                        <p class="menu__link">Уведомления</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="menu__bottom">
+            <ul class="menu__items">
+                <li>
+                    <a href="reports.html" class="menu__item">
+                        <svg class="icon" viewBox="0 0 512 512">
+                            <use xlink:href="assets/img/svg/sprite.svg#docs"></use>
+                        </svg>
+                        <p class="menu__link">Отчеты</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu__item">
+                        <svg class="icon" viewBox="0 0 512 512">
+                            <use xlink:href="assets/img/svg/sprite.svg#profile"></use>
+                        </svg>
+                        <p class="menu__link">Профиль</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu__item">
+                        <svg class="icon" viewBox="0 0 512 512">
+                            <use xlink:href="assets/img/svg/sprite.svg#settings"></use>
+                        </svg>
+                        <p class="menu__link">Настройки</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu__item">
+                        <svg class="icon" viewBox="0 0 512 512">
+                            <use xlink:href="assets/img/svg/sprite.svg#logout"></use>
+                        </svg>
+                        <p class="menu__link">Выйти</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <main>
+        <div class="container">
+            <!-- Начало страницы -->
+
+            <div class="activity">
+                <div class="search-block">
+                    <img src="assets/img/activity/Search.png" alt="search" class="search__img">
+                    <input type="search" name="" id="" class="search" placeholder="Поиск">
+                </div>
+                <h1 class="title activity__title">Отчет активности менеджеров</h1>
+                <h3 class="subtitle activity__subtitle">Мониторинг работы сотрудников по офисам</h3>
+                <div class="buttons">
+                    <div class="btn btn--active">Все города</div>
+                    <div class="btn">Города моего округа</div>
+                </div>
+            </div>
+
+            <!-- Конец страницы -->
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

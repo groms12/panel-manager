@@ -16,9 +16,8 @@ body
     background-color: $bg-gray 
 
 .container
-    margin-left: 76px
+    margin-left: 96px
     margin-right: 24px
-    width: 100%
 
 ul
     list-style: none
@@ -26,3 +25,28 @@ ul
 a
     text-decoration: none
     color: $black
+
+.title
+    font-weight: 700
+    font-size: 36px
+    line-height: 48px
+    letter-spacing: -0.022em
+
+.subtitle
+    font-size: 14px
+    letter-spacing: -0.006em
+    font-weight: 400
+.buttons
+    display: flex
+    grid-gap: 8px
+.btn
+    font-size: 14px
+    letter-spacing: -0.006em
+    border-radius: 4px
+    padding: 8px 24px
+    max-width: fit-content
+    &--active, &:hover
+        background-color: #fff
+        cursor: pointer
+        font-weight: 600
+

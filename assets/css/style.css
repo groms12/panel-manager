@@ -15,13 +15,12 @@ html {
 }
 
 body {
-  background-color: #F6F8F9;
+  background-color: #ECEEEF;
 }
 
 .container {
-  margin-left: 76px;
+  margin-left: 96px;
   margin-right: 24px;
-  width: 100%;
 }
 
 ul {
@@ -31,6 +30,37 @@ ul {
 a {
   text-decoration: none;
   color: #252C32;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.022em;
+}
+
+.subtitle {
+  font-size: 14px;
+  letter-spacing: -0.006em;
+  font-weight: 400;
+}
+
+.buttons {
+  display: flex;
+  grid-gap: 8px;
+}
+
+.btn {
+  font-size: 14px;
+  letter-spacing: -0.006em;
+  border-radius: 4px;
+  padding: 8px 24px;
+  max-width: fit-content;
+}
+.btn--active, .btn:hover {
+  background-color: #fff;
+  cursor: pointer;
+  font-weight: 600;
 }
 
 .menu {
@@ -113,4 +143,42 @@ a {
 .menu__icon--active span:last-child {
   transform: rotate(45deg);
   margin-top: -6px;
+}
+
+.activity {
+  margin-top: 24px;
+}
+.activity__title {
+  margin-bottom: 4px;
+}
+.activity__subtitle {
+  margin-bottom: 16px;
+}
+
+.search {
+  width: 100%;
+  padding: 16px 24px;
+  border-radius: 8px;
+  background-color: #fff;
+  display: flex;
+  border: none;
+  outline: none;
+  text-indent: 24px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.014em;
+  margin-bottom: 24px;
+}
+.search-block {
+  position: relative;
+}
+.search__img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 16px;
+  margin: auto;
 }/*# sourceMappingURL=style.css.map */
