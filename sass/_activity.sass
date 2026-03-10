@@ -28,3 +28,135 @@
         bottom: 0
         left: 16px
         margin: auto
+.city
+    padding: 16px
+    background-color: #fff
+    border-radius: 8px
+    margin-top: 16px
+    &__offices
+        display: none
+        &--active
+            display: block
+    &__header
+        background-color: $city-orange
+        padding: 8px
+        border-radius: 8px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .left
+            display: flex
+            align-items: center
+            flex-basis: 80%
+    &__name
+        display: flex
+        align-items: center
+        flex-basis: 20%
+        p
+            font-weight: 700
+            font-size: 14px
+            line-height: 24px
+            letter-spacing: -0.006em
+            color: $orange
+    &__info
+        display: flex
+        align-items: center
+        p
+            font-weight: 700
+            font-size: 14px
+            line-height: 24px
+            letter-spacing: -0.006em
+            color: $black
+            &:last-child
+                margin-left: 32px
+    &__arrow
+        transform: rotate(180deg)
+        &--active
+            transform: rotate(0deg)
+
+.table
+    width: 100%
+    border-collapse: collapse 
+    tr
+        display: table-row
+        padding: 12px
+        &:not(:last-child)
+            border-bottom: 1px solid $stroke-gray
+        &:nth-child(2n)
+            background-color: $table-gray
+    th
+        font-weight: 600
+        font-size: 12px
+        line-height: 16px
+        letter-spacing: 0.018em
+        text-transform: uppercase
+        color: $text-gray
+        text-align: left
+        padding: 12px
+        padding-top: 16px
+    td
+        font-weight: 400
+        font-size: 14px
+        line-height: 24px
+        letter-spacing: -0.006em
+        color: $black
+        padding: 12px
+    .td-flex
+        display: flex
+        align-items: center
+        grid-gap: 8px
+
+.office
+    padding: 12px 8px 8px 8px
+    background-color: #F6F8F9
+    border-radius: 8px
+    margin-top: 16px
+    &__main
+        display: flex
+        align-items: center
+        margin-bottom: 12px
+    &__body
+        background-color: $white
+        border-radius: 8px
+        padding: 8px
+    &__name
+        display: flex
+        grid-gap: 8px
+        align-items: center
+        margin-right: 32px
+        .office__info
+            p
+                &:first-child
+                    font-weight: 700
+                    font-size: 14px
+                    line-height: 24px
+                    letter-spacing: -0.006em
+                &:last-child
+                    font-size: 14px
+    &__arrow
+        transform: rotate(180deg)
+        max-width: 16px
+    &__status
+        display: flex
+        align-items: center
+        grid-gap: 24px
+    &__dop 
+        margin-bottom: 12px
+
+.office__btn
+    display: flex
+    align-items: center
+    padding: 2px 8px
+    border-radius: 100px
+    max-width: fit-content
+    img
+        margin-right: 4px
+    &--blue
+        color: $blue
+        background-color: $light-blue
+    &--green
+        color: $green
+        background-color: $light-green
+    &--red
+        color: $red
+        background-color: $light-red

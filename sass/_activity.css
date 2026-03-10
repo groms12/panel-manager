@@ -39,3 +39,14 @@
   left: 16px;
   margin: auto;
 }
+
+.city {
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-top: 16px;
+}
+
+.city__offices {
+  display: none;
+}
