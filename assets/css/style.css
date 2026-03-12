@@ -53,7 +53,7 @@ a {
 .btn {
   font-size: 14px;
   letter-spacing: -0.006em;
-  border-radius: 4px;
+  border-radius: 7px;
   padding: 8px 24px;
   transition: all 0.3s;
   max-width: fit-content;
