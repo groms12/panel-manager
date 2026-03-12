@@ -55,11 +55,19 @@ a {
   letter-spacing: -0.006em;
   border-radius: 4px;
   padding: 8px 24px;
+  transition: all 0.3s;
   max-width: fit-content;
+  cursor: pointer;
 }
 .btn--active, .btn:hover {
   background-color: #fff;
-  cursor: pointer;
+  font-weight: 600;
+}
+.btn--orange {
+  background-color: #F97316;
+}
+.btn--orange:hover {
+  background-color: #fff;
   font-weight: 600;
 }
 
@@ -280,6 +288,25 @@ a {
   align-items: center;
   grid-gap: 8px;
 }
+.table .td-meneger__name {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  grid-gap: 8px;
+}
+.table .td-meneger__name p {
+  font-size: 14px;
+}
+.table .td-meneger__name p:first-child {
+  color: #83909A;
+}
+.table .td-meneger__info a {
+  font-size: 12px;
+  color: #156CA9;
+}
+.table .td-meneger__info a:last-child {
+  margin-left: 8px;
+}
 
 .office {
   padding: 12px 8px 8px 8px;
@@ -302,6 +329,7 @@ a {
   grid-gap: 8px;
   align-items: center;
   margin-right: 32px;
+  cursor: pointer;
 }
 .office__name .office__info p:first-child {
   font-weight: 700;
@@ -313,8 +341,11 @@ a {
   font-size: 14px;
 }
 .office__arrow {
-  transform: rotate(180deg);
   max-width: 16px;
+  transform: rotate(180deg);
+}
+.office__arrow--active {
+  transform: rotate(0deg);
 }
 .office__status {
   display: flex;
@@ -323,6 +354,10 @@ a {
 }
 .office__dop {
   margin-bottom: 12px;
+  display: none;
+}
+.office__dop--active {
+  display: block;
 }
 
 .office__btn {
@@ -346,4 +381,10 @@ a {
 .office__btn--red {
   color: #F91616;
   background-color: #FEE2E2;
+}
+
+.buttons-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */

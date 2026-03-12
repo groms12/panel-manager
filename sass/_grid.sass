@@ -44,9 +44,15 @@ a
     letter-spacing: -0.006em
     border-radius: 4px
     padding: 8px 24px
+    transition: all .3s
     max-width: fit-content
+    cursor: pointer
     &--active, &:hover
         background-color: #fff
-        cursor: pointer
         font-weight: 600
+    &--orange
+        background-color: $orange
+        &:hover
+            background-color: #fff
+            font-weight: 600
 

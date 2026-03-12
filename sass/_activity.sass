@@ -105,7 +105,23 @@
         display: flex
         align-items: center
         grid-gap: 8px
-
+    .td-meneger
+        &__name
+            display: flex
+            align-items: center
+            justify-content: start
+            grid-gap: 8px
+            p
+                font-size: 14px
+                &:first-child
+                    color: $icon-gray
+        &__info
+            a
+                font-size: 12px
+                color: $blue
+                &:last-child
+                    margin-left: 8px
+        
 .office
     padding: 12px 8px 8px 8px
     background-color: #F6F8F9
@@ -124,6 +140,7 @@
         grid-gap: 8px
         align-items: center
         margin-right: 32px
+        cursor: pointer
         .office__info
             p
                 &:first-child
@@ -134,14 +151,19 @@
                 &:last-child
                     font-size: 14px
     &__arrow
-        transform: rotate(180deg)
         max-width: 16px
+        transform: rotate(180deg)
+        &--active
+            transform: rotate(0deg)
     &__status
         display: flex
         align-items: center
         grid-gap: 24px
     &__dop 
         margin-bottom: 12px
+        display: none
+        &--active
+            display: block
 
 .office__btn
     display: flex
@@ -160,3 +182,7 @@
     &--red
         color: $red
         background-color: $light-red
+.buttons-block
+    display: flex
+    align-items: center
+    justify-content: space-between

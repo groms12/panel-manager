@@ -157,9 +157,15 @@
                 </div>
                 <h1 class="title activity__title">Отчет активности менеджеров</h1>
                 <h3 class="subtitle activity__subtitle">Мониторинг работы сотрудников по офисам</h3>
-                <div class="buttons">
-                    <div class="btn btn--active">Все города</div>
-                    <div class="btn">Города моего округа</div>
+                <div class="buttons-block">
+                    <div class="buttons">
+                        <div class="btn btn--active">Все города</div>
+                        <div class="btn">Города моего округа</div>
+                    </div>
+                    <div class="buttons">
+                        <div class="btn btn--orange btn-open">Открыть все</div>
+                        <div class="btn btn--orange btn-close">Свернуть все</div>
+                    </div>
                 </div>
             </div>
 
@@ -176,7 +182,7 @@
                                 <p>1 менеджер</p>
                             </div>
                         </div>
-                        <div class="city__arrow"><img src="assets/img/svg/arrow-top.svg" alt=""></div>
+                        <div class="city__arrow city__arrow--active"><img src="assets/img/svg/arrow-top.svg" alt=""></div>
                     </div>
                     <div class="city__offices  city__offices--active">
                         <div class="city__office office">
@@ -188,7 +194,7 @@
                                             <p>ул. Нехинская д.26</p>
                                             <p>Центральный округ</p>
                                         </div>
-                                        <img src="assets/img/svg/arrow-top.svg" alt="" class="office__arrow">
+                                        <img src="assets/img/svg/arrow-top.svg" alt="" class="office__arrow office__arrow--active">
                                     </div>
                                     <div class="office__status">
                                         <div class="office__btn office__btn--green">10%</div>
@@ -196,7 +202,7 @@
                                         <div class="office__btn office__btn--green"><img src="assets/img/activity/open.png" alt=""><span>Принимает</span></div>
                                     </div>
                                 </div>
-                                <div class="office__dop">
+                                <div class="office__dop office__dop--active">
                                     <table class="table">
                                         <tr>
                                             <th>руководитель</th>
@@ -236,9 +242,54 @@
                                     </tr>
                                     <tr>
                                         <td>
+                                            <div class="td-meneger">
+                                                <div class="td-meneger__name">
+                                                    <p>#104</p>
+                                                    <p>Пушкарева Надежда Витальевна</p>
+                                                    <div class="office__btn office__btn--blue"><img src="assets/img/activity/bitrix.png" alt=""><span>Б24</span></div>
+                                                </div>
+                                                <div class="td-meneger__info">
+                                                    <a href="tel:+7 (816) 268-03-65">+7 (816) 268-03-65</a>
+                                                    <a href="mailto:mail@mail.ru">mail@mail.ru</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="office__btn office__btn--green">10%</div>
+                                        </td>
+                                        <td>
+                                            <div class="office__btn office__btn--red"><img src="assets/img/activity/not-call.png" alt=""><span>Не принимает</span></div>
+                                        </td>
+                                        <td>
+                                            <div class="office__btn office__btn--red"><img src="assets/img/activity/close.png" alt=""><span>Не принимает</span></div>
+                                        </td>
+                                        <td>
+                                            <div class="office__btn office__btn--green"><img src="assets/img/activity/open.png" alt=""><span>Календарь</span></div>
+                                        </td>
+                                        <td>
                                             <div class="td-flex">
-                                                Иванова Мария Петровна
-                                                <div class="office__btn office__btn--blue"><img src="assets/img/activity/bitrix.png" alt=""><span>Б24</span></div>
+                                                <img src="assets/img/activity/telegram.png" alt="">
+                                                <img src="assets/img/activity/max.png" alt="">
+                                            </div>
+                                        </td>
+                                        <td>с 10.00 до 19.00</td>
+                                        <td>
+                                            <div class="office__btn office__btn--green">В норме</div>
+                                            08:58 - 18:05
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="td-meneger">
+                                                <div class="td-meneger__name">
+                                                    <p>#104</p>
+                                                    <p>Кирякова Юлия Сергеевна</p>
+                                                    <div class="office__btn office__btn--blue"><img src="assets/img/activity/bitrix.png" alt=""><span>Б24</span></div>
+                                                </div>
+                                                <div class="td-meneger__info">
+                                                    <a href="tel:+7 (816) 268-03-65">+7 (816) 268-03-65</a>
+                                                    <a href="mailto:mail@mail.ru">mail@mail.ru</a>
+                                                </div>
                                             </div>
                                         </td>
                                         <td>
@@ -267,40 +318,16 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <div class="td-flex">
-                                                Иванова Мария Петровна
-                                                <div class="office__btn office__btn--blue"><img src="assets/img/activity/bitrix.png" alt=""><span>Б24</span></div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="office__btn office__btn--green">10%</div>
-                                        </td>
-                                        <td>
-                                            <div class="office__btn office__btn--green"><img src="assets/img/activity/call.png" alt=""><span>Принимает</span></div>
-                                        </td>
-                                        <td>
-                                            <div class="office__btn office__btn--green"><img src="assets/img/activity/open.png" alt=""><span>Принимает</span></div>
-                                        </td>
-                                        <td>
-                                            <div class="office__btn office__btn--green"><img src="assets/img/activity/open.png" alt=""><span>Календарь</span></div>
-                                        </td>
-                                        <td>
-                                            <div class="td-flex">
-                                                <img src="assets/img/activity/telegram.png" alt="">
-                                                <img src="assets/img/activity/max.png" alt="">
-                                            </div>
-                                        </td>
-                                        <td>с 10.00 до 19.00</td>
-                                        <td>
-                                            <div class="office__btn office__btn--green">В норме</div>
-                                            08:58 - 18:05
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="td-flex">
-                                                Иванова Мария Петровна
-                                                <div class="office__btn office__btn--blue"><img src="assets/img/activity/bitrix.png" alt=""><span>Б24</span></div>
+                                            <div class="td-meneger">
+                                                <div class="td-meneger__name">
+                                                    <p>#104</p>
+                                                    <p>Кирякова Юлия Сергеевна</p>
+                                                    <div class="office__btn office__btn--blue"><img src="assets/img/activity/bitrix.png" alt=""><span>Б24</span></div>
+                                                </div>
+                                                <div class="td-meneger__info">
+                                                    <a href="tel:+7 (816) 268-03-65">+7 (816) 268-03-65</a>
+                                                    <a href="mailto:mail@mail.ru">mail@mail.ru</a>
+                                                </div>
                                             </div>
                                         </td>
                                         <td>
@@ -404,9 +431,16 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <div class="td-flex">
-                                                Иванова Мария Петровна
-                                                <div class="office__btn office__btn--blue"><img src="assets/img/activity/bitrix.png" alt=""><span>Б24</span></div>
+                                            <div class="td-meneger">
+                                                <div class="td-meneger__name">
+                                                    <p>#104</p>
+                                                    <p>Кирякова Юлия Сергеевна</p>
+                                                    <div class="office__btn office__btn--blue"><img src="assets/img/activity/bitrix.png" alt=""><span>Б24</span></div>
+                                                </div>
+                                                <div class="td-meneger__info">
+                                                    <a href="tel:+7 (816) 268-03-65">+7 (816) 268-03-65</a>
+                                                    <a href="mailto:mail@mail.ru">mail@mail.ru</a>
+                                                </div>
                                             </div>
                                         </td>
                                         <td>
@@ -435,9 +469,16 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <div class="td-flex">
-                                                Иванова Мария Петровна
-                                                <div class="office__btn office__btn--blue"><img src="assets/img/activity/bitrix.png" alt=""><span>Б24</span></div>
+                                            <div class="td-meneger">
+                                                <div class="td-meneger__name">
+                                                    <p>#104</p>
+                                                    <p>Кирякова Юлия Сергеевна</p>
+                                                    <div class="office__btn office__btn--blue"><img src="assets/img/activity/bitrix.png" alt=""><span>Б24</span></div>
+                                                </div>
+                                                <div class="td-meneger__info">
+                                                    <a href="tel:+7 (816) 268-03-65">+7 (816) 268-03-65</a>
+                                                    <a href="mailto:mail@mail.ru">mail@mail.ru</a>
+                                                </div>
                                             </div>
                                         </td>
                                         <td>
@@ -466,9 +507,188 @@
                                     </tr>
                                     <tr>
                                         <td>
+                                            <div class="td-meneger">
+                                                <div class="td-meneger__name">
+                                                    <p>#104</p>
+                                                    <p>Кирякова Юлия Сергеевна</p>
+                                                    <div class="office__btn office__btn--blue"><img src="assets/img/activity/bitrix.png" alt=""><span>Б24</span></div>
+                                                </div>
+                                                <div class="td-meneger__info">
+                                                    <a href="tel:+7 (816) 268-03-65">+7 (816) 268-03-65</a>
+                                                    <a href="mailto:mail@mail.ru">mail@mail.ru</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="office__btn office__btn--green">10%</div>
+                                        </td>
+                                        <td>
+                                            <div class="office__btn office__btn--green"><img src="assets/img/activity/call.png" alt=""><span>Принимает</span></div>
+                                        </td>
+                                        <td>
+                                            <div class="office__btn office__btn--green"><img src="assets/img/activity/open.png" alt=""><span>Принимает</span></div>
+                                        </td>
+                                        <td>
+                                            <div class="office__btn office__btn--green"><img src="assets/img/activity/open.png" alt=""><span>Календарь</span></div>
+                                        </td>
+                                        <td>
                                             <div class="td-flex">
-                                                Иванова Мария Петровна
-                                                <div class="office__btn office__btn--blue"><img src="assets/img/activity/bitrix.png" alt=""><span>Б24</span></div>
+                                                <img src="assets/img/activity/telegram.png" alt="">
+                                                <img src="assets/img/activity/max.png" alt="">
+                                            </div>
+                                        </td>
+                                        <td>с 10.00 до 19.00</td>
+                                        <td>
+                                            <div class="office__btn office__btn--green">В норме</div>
+                                            08:58 - 18:05
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="city__office office">
+                            <div class="office__header">
+                                <div class="office__main">
+                                    <div class="office__name">
+                                        <img src="assets/img/svg/place.svg" alt="">
+                                        <div class="office__info">
+                                            <p>ул. Морозова, 72</p>
+                                            <p>Центральный округ</p>
+                                        </div>
+                                        <img src="assets/img/svg/arrow-top.svg" alt="" class="office__arrow">
+                                    </div>
+                                    <div class="office__status">
+                                        <div class="office__btn office__btn--green">10%</div>
+                                        <div class="office__btn office__btn--green"><img src="assets/img/activity/call.png" alt=""><span>Принимает</span></div>
+                                        <div class="office__btn office__btn--green"><img src="assets/img/activity/open.png" alt=""><span>Принимает</span></div>
+                                    </div>
+                                </div>
+                                <div class="office__dop">
+                                    <table class="table">
+                                        <tr>
+                                            <th>руководитель</th>
+                                            <th>Основной телефон</th>
+                                            <th>2ГИС</th>
+                                            <th>яндекс карты</th>
+                                            <th>резервный</th>
+                                            <th>часовой пояс</th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="td-flex">
+                                                    Иванова Мария Петровна
+                                                    <div class="office__btn office__btn--blue"><img src="assets/img/activity/bitrix.png" alt=""><span>Б24</span></div>
+                                                </div>
+                                            </td>
+                                            <td>+7 (816) 268-03-65</td>
+                                            <td>+7 (816) 268-03-65</td>
+                                            <td>+7 (816) 268-03-65</td>
+                                            <td>+7 (816) 268-03-65</td>
+                                            <td>UTC +3 (МСК)</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="office__body">
+                                <table class="office__menegers table">
+                                    <tr>
+                                        <th>Менеджер</th>
+                                        <th>t</th>
+                                        <th>Статус звонков</th>
+                                        <th>Статус посетителей</th>
+                                        <th>календарь встреч</th>
+                                        <th>Мессенджеры</th>
+                                        <th>Время работы по графику (Мск)</th>
+                                        <th>ДИСЦИПЛИНА</th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="td-meneger">
+                                                <div class="td-meneger__name">
+                                                    <p>#104</p>
+                                                    <p>Кирякова Юлия Сергеевна</p>
+                                                    <div class="office__btn office__btn--blue"><img src="assets/img/activity/bitrix.png" alt=""><span>Б24</span></div>
+                                                </div>
+                                                <div class="td-meneger__info">
+                                                    <a href="tel:+7 (816) 268-03-65">+7 (816) 268-03-65</a>
+                                                    <a href="mailto:mail@mail.ru">mail@mail.ru</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="office__btn office__btn--green">10%</div>
+                                        </td>
+                                        <td>
+                                            <div class="office__btn office__btn--green"><img src="assets/img/activity/call.png" alt=""><span>Принимает</span></div>
+                                        </td>
+                                        <td>
+                                            <div class="office__btn office__btn--green"><img src="assets/img/activity/open.png" alt=""><span>Принимает</span></div>
+                                        </td>
+                                        <td>
+                                            <div class="office__btn office__btn--green"><img src="assets/img/activity/open.png" alt=""><span>Календарь</span></div>
+                                        </td>
+                                        <td>
+                                            <div class="td-flex">
+                                                <img src="assets/img/activity/telegram.png" alt="">
+                                                <img src="assets/img/activity/max.png" alt="">
+                                            </div>
+                                        </td>
+                                        <td>с 10.00 до 19.00</td>
+                                        <td>
+                                            <div class="office__btn office__btn--green">В норме</div>
+                                            08:58 - 18:05
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="td-meneger">
+                                                <div class="td-meneger__name">
+                                                    <p>#104</p>
+                                                    <p>Кирякова Юлия Сергеевна</p>
+                                                    <div class="office__btn office__btn--blue"><img src="assets/img/activity/bitrix.png" alt=""><span>Б24</span></div>
+                                                </div>
+                                                <div class="td-meneger__info">
+                                                    <a href="tel:+7 (816) 268-03-65">+7 (816) 268-03-65</a>
+                                                    <a href="mailto:mail@mail.ru">mail@mail.ru</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="office__btn office__btn--green">10%</div>
+                                        </td>
+                                        <td>
+                                            <div class="office__btn office__btn--green"><img src="assets/img/activity/call.png" alt=""><span>Принимает</span></div>
+                                        </td>
+                                        <td>
+                                            <div class="office__btn office__btn--green"><img src="assets/img/activity/open.png" alt=""><span>Принимает</span></div>
+                                        </td>
+                                        <td>
+                                            <div class="office__btn office__btn--green"><img src="assets/img/activity/open.png" alt=""><span>Календарь</span></div>
+                                        </td>
+                                        <td>
+                                            <div class="td-flex">
+                                                <img src="assets/img/activity/telegram.png" alt="">
+                                                <img src="assets/img/activity/max.png" alt="">
+                                            </div>
+                                        </td>
+                                        <td>с 10.00 до 19.00</td>
+                                        <td>
+                                            <div class="office__btn office__btn--green">В норме</div>
+                                            08:58 - 18:05
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="td-meneger">
+                                                <div class="td-meneger__name">
+                                                    <p>#104</p>
+                                                    <p>Кирякова Юлия Сергеевна</p>
+                                                    <div class="office__btn office__btn--blue"><img src="assets/img/activity/bitrix.png" alt=""><span>Б24</span></div>
+                                                </div>
+                                                <div class="td-meneger__info">
+                                                    <a href="tel:+7 (816) 268-03-65">+7 (816) 268-03-65</a>
+                                                    <a href="mailto:mail@mail.ru">mail@mail.ru</a>
+                                                </div>
                                             </div>
                                         </td>
                                         <td>
