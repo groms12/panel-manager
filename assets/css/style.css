@@ -64,7 +64,7 @@ a {
   font-weight: 600;
 }
 .btn--orange {
-  background-color: #F97316;
+  background-color: rgba(131, 144, 154, 0.4);
 }
 .btn--orange:hover {
   background-color: #fff;
