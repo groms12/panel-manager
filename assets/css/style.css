@@ -63,12 +63,15 @@ a {
   background-color: #fff;
   font-weight: 600;
 }
-.btn--orange {
+.btn--gray {
   background-color: rgba(131, 144, 154, 0.4);
 }
-.btn--orange:hover {
+.btn--gray:hover {
   background-color: #fff;
   font-weight: 600;
+}
+.btn--gray:first-child {
+  background-color: rgba(131, 144, 154, 0.7);
 }
 
 .menu {
@@ -358,6 +361,12 @@ a {
 }
 .office__dop--active {
   display: block;
+}
+.office__menegers td:nth-child(2), .office__menegers td:nth-child(3), .office__menegers td:nth-child(4), .office__menegers td:nth-child(5), .office__menegers th:nth-child(2), .office__menegers th:nth-child(3), .office__menegers th:nth-child(4), .office__menegers th:nth-child(5) {
+  text-align: center;
+}
+.office__menegers td:nth-child(2) .office__btn, .office__menegers td:nth-child(3) .office__btn, .office__menegers td:nth-child(4) .office__btn, .office__menegers td:nth-child(5) .office__btn, .office__menegers th:nth-child(2) .office__btn, .office__menegers th:nth-child(3) .office__btn, .office__menegers th:nth-child(4) .office__btn, .office__menegers th:nth-child(5) .office__btn {
+  margin: auto;
 }
 
 .office__btn {
