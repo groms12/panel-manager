@@ -35,3 +35,18 @@ $('.btn-close').click(function() {
     $('.city__arrow').removeClass('city__arrow--active');
     $('.city__offices').removeClass('city__offices--active');
 });
+var k = 0;
+$('.menu__item-theme').click(function() {
+    if (k == 0) {
+        $('head').children('link[rel="stylesheet"]').attr('href', 'assets/css/style-dark.css');
+        k = 1;
+    } else {
+        $('head').children('link[rel="stylesheet"]').attr('href', 'assets/css/style.css');
+        k = 0;
+    }
+    $('.menu__open').trigger('click')
+});
+$('.buttons>.btn').click(function() {
+    $('.buttons>.btn').removeClass('btn--active');
+    $(this).toggleClass('btn--active');
+});
