@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Панель менеджера</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <section class="menu">
+        <div class="menu__up">
+            <div class="menu__open">
+                <div class="menu__icon menu__icon--active"><span></span><span></span><span></span></div>
+                <p class="menu__link">Меню</p>
+            </div>
+            <ul class="menu__items">
+                <li>
+                    <a href="#" class="menu__item">
+                        <svg class="icon" viewBox="0 0 512 512">
+                            <use xlink:href="assets/img/svg/sprite.svg#home"></use>
+                        </svg>
+                        <p class="menu__link">Главная</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu__item">
+                        <svg class="icon" viewBox="0 0 512 512">
+                            <use xlink:href="assets/img/svg/sprite.svg#client"></use>
+                        </svg>
+                        <p class="menu__link">Мои клиенты</p>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="#" class="menu__item">
+                                <p class="menu__link">Мой офис</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__item">
+                                <p class="menu__link">Мой город</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__item">
+                                <p class="menu__link">Поиск клиента</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__item">
+                                <p class="menu__link">База заказов</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__item">
+                                <p class="menu__link">Отправить смс</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__item">
+                                <p class="menu__link">Передать ответственность</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="menu__item">
+                        <svg class="icon" viewBox="0 0 512 512">
+                            <use xlink:href="assets/img/svg/sprite.svg#calendar"></use>
+                        </svg>
+                        <p class="menu__link">График встреч</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu__item">
+                        <svg class="icon" viewBox="0 0 512 512">
+                            <use xlink:href="assets/img/svg/sprite.svg#star"></use>
+                        </svg>
+                        <p class="menu__link">Доска почета</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu__item">
+                        <svg class="icon" viewBox="0 0 512 512">
+                            <use xlink:href="assets/img/svg/sprite.svg#switch"></use>
+                        </svg>
+                        <p class="menu__link">Воронка</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu__item">
+                        <svg class="icon" viewBox="0 0 512 512">
+                            <use xlink:href="assets/img/svg/sprite.svg#graphic"></use>
+                        </svg>
+                        <p class="menu__link">Статистика</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu__item">
+                        <svg class="icon" viewBox="0 0 512 512">
+                            <use xlink:href="assets/img/svg/sprite.svg#settings"></use>
+                        </svg>
+                        <p class="menu__link">Уведомления</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="menu__bottom">
+            <ul class="menu__items">
+                <li>
+                    <a href="reports.html" class="menu__item">
+                        <svg class="icon" viewBox="0 0 512 512">
+                            <use xlink:href="assets/img/svg/sprite.svg#docs"></use>
+                        </svg>
+                        <p class="menu__link">Отчеты</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu__item">
+                        <svg class="icon" viewBox="0 0 512 512">
+                            <use xlink:href="assets/img/svg/sprite.svg#profile"></use>
+                        </svg>
+                        <p class="menu__link">Профиль</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu__item">
+                        <svg class="icon" viewBox="0 0 512 512">
+                            <use xlink:href="assets/img/svg/sprite.svg#settings"></use>
+                        </svg>
+                        <p class="menu__link">Настройки</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu__item">
+                        <svg class="icon" viewBox="0 0 512 512">
+                            <use xlink:href="assets/img/svg/sprite.svg#logout"></use>
+                        </svg>
+                        <p class="menu__link">Выйти</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu__item menu__item-theme">
+                        <svg class="icon" viewBox="0 0 512 512">
+                            <use xlink:href="assets/img/svg/theme.svg#theme"></use>
+                        </svg>
+                        <p class="menu__link">Сменить тему</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <main>
+        <div class="container">
+            <div class="info-stand">
+                <div class="info-stand__top">
+                    <img src="assets/img/info-stand/logo.png" alt="Логотип" class="info-stand__logo">
+                    <span></span>
+                    <h1 class="info-stand__title">Информационный стенд Заказчика</h1>
+                </div>
+                <div class="info-stand__select">
+                    <select name="" id="">
+                        <option value="1">г. Владимир, пр-т Ленина, д. 42</option>
+                        <option value="2">г. Москва, пр-т Ленина, д. 42</option>
+                        <option value="3">г. Ярославль, пр-т Ленина, д. 42</option>
+                        <option value="4">г. Санкт-Петербург, пр-т Ленина, д. 42</option>
+                    </select>
+                </div>
+                <div class="info-stand__cards">
+                    <div class="info-stand__card">
+                        <div class="info-stand__actions">
+                            <a href="/assets/files/test.docx" class="info-stand__btn info-stand__print">
+                                <img src="assets/img/info-stand/print.png" alt="">
+                            </a>
+                            <div class="info-stand__btn info-stand__scale">
+                                <img src="assets/img/info-stand/scale.png" alt="">
+                            </div>
+                            <a href="/assets/files/test.docx" download class="info-stand__btn">
+                                <img src="assets/img/info-stand/download.png" alt="">
+                            </a>
+                        </div>
+                        <div class="info-stand__photo">
+                            <img src="assets/img/info-stand/img.png" alt="">
+                        </div>
+                        <p class="info-stand__name">Данные ЕГРИП</p>
+                    </div>
+                    <div class="info-stand__card">
+                        <div class="info-stand__actions">
+                            <div class="info-stand__btn info-stand__print">
+                                <img src="assets/img/info-stand/print.png" alt="">
+                            </div>
+                            <div class="info-stand__btn info-stand__scale">
+                                <img src="assets/img/info-stand/scale.png" alt="">
+                            </div>
+                            <a href="/assets/files/test.docx" download class="info-stand__btn">
+                                <img src="assets/img/info-stand/download.png" alt="">
+                            </a>
+                        </div>
+                        <div class="info-stand__photo">
+                            <img src="assets/img/info-stand/img.png" alt="">
+                        </div>
+                        <p class="info-stand__name">Номера телефонов общероссийских контролирующих органов</p>
+                    </div>
+                    <div class="info-stand__card">
+                        <div class="info-stand__actions">
+                            <div class="info-stand__btn info-stand__print">
+                                <img src="assets/img/info-stand/print.png" alt="">
+                            </div>
+                            <div class="info-stand__btn info-stand__scale">
+                                <img src="assets/img/info-stand/scale.png" alt="">
+                            </div>
+                            <a href="/assets/files/test.docx" download class="info-stand__btn">
+                                <img src="assets/img/info-stand/download.png" alt="">
+                            </a>
+                        </div>
+                        <div class="info-stand__photo">
+                            <img src="assets/img/info-stand/img.png" alt="">
+                        </div>
+                        <p class="info-stand__name">Журнал проверок с отметками органов</p>
+                    </div>
+                    <div class="info-stand__card">
+                        <div class="info-stand__actions">
+                            <div class="info-stand__btn info-stand__print">
+                                <img src="assets/img/info-stand/print.png" alt="">
+                            </div>
+                            <div class="info-stand__btn info-stand__scale">
+                                <img src="assets/img/info-stand/scale.png" alt="">
+                            </div>
+                            <a href="/assets/files/test.docx" download class="info-stand__btn">
+                                <img src="assets/img/info-stand/download.png" alt="">
+                            </a>
+                        </div>
+                        <div class="info-stand__photo">
+                            <img src="assets/img/info-stand/img.png" alt="">
+                        </div>
+                        <p class="info-stand__name">Книга жалоб и предложений</p>
+                    </div>
+                    <div class="info-stand__card">
+                        <div class="info-stand__actions">
+                            <div class="info-stand__btn info-stand__print">
+                                <img src="assets/img/info-stand/print.png" alt="">
+                            </div>
+                            <div class="info-stand__btn info-stand__scale">
+                                <img src="assets/img/info-stand/scale.png" alt="">
+                            </div>
+                            <a href="/assets/files/test.docx" download class="info-stand__btn">
+                                <img src="assets/img/info-stand/download.png" alt="">
+                            </a>
+                        </div>
+                        <div class="info-stand__photo">
+                            <img src="assets/img/info-stand/img.png" alt="">
+                        </div>
+                        <p class="info-stand__name">График работы</p>
+                    </div>
+                    <div class="info-stand__card">
+                        <div class="info-stand__actions">
+                            <div class="info-stand__btn info-stand__print">
+                                <img src="assets/img/info-stand/print.png" alt="">
+                            </div>
+                            <div class="info-stand__btn info-stand__scale">
+                                <img src="assets/img/info-stand/scale.png" alt="">
+                            </div>
+                            <a href="/assets/files/test.docx" download class="info-stand__btn">
+                                <img src="assets/img/info-stand/download.png" alt="">
+                            </a>
+                        </div>
+                        <div class="info-stand__photo">
+                            <img src="assets/img/info-stand/img.png" alt="">
+                        </div>
+                        <p class="info-stand__name">Письмо директору</p>
+                    </div>
+                    <div class="info-stand__card">
+                        <div class="info-stand__actions">
+                            <div class="info-stand__btn info-stand__print">
+                                <img src="assets/img/info-stand/print.png" alt="">
+                            </div>
+                            <div class="info-stand__btn info-stand__scale">
+                                <img src="assets/img/info-stand/scale.png" alt="">
+                            </div>
+                            <a href="/assets/files/test.docx" download class="info-stand__btn">
+                                <img src="assets/img/info-stand/download.png" alt="">
+                            </a>
+                        </div>
+                        <div class="info-stand__photo">
+                            <img src="assets/img/info-stand/img.png" alt="">
+                        </div>
+                        <p class="info-stand__name">Памятка о предоставлении чека</p>
+                    </div>
+                    <div class="info-stand__card">
+                        <div class="info-stand__actions">
+                            <div class="info-stand__btn info-stand__print">
+                                <img src="assets/img/info-stand/print.png" alt="">
+                            </div>
+                            <div class="info-stand__btn info-stand__scale">
+                                <img src="assets/img/info-stand/scale.png" alt="">
+                            </div>
+                            <a href="/assets/files/test.docx" download class="info-stand__btn">
+                                <img src="assets/img/info-stand/download.png" alt="">
+                            </a>
+                        </div>
+                        <div class="info-stand__photo">
+                            <img src="assets/img/info-stand/img.png" alt="">
+                        </div>
+                        <p class="info-stand__name">Информация для льготников</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

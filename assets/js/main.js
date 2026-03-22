@@ -50,3 +50,15 @@ $('.buttons>.btn').click(function() {
     $('.buttons>.btn').removeClass('btn--active');
     $(this).toggleClass('btn--active');
 });
+
+$('.info-stand__print').click(function() {
+    // подумать
+    $(this).preventDefault();
+    var file = $(this).attr('href');
+    var file2 = window.open(file);
+    file2.print();
+});
+
+$('.info-stand__scale').click(function() {
+    $(this).parent('.info-stand__actions').siblings('.info-stand__photo').toggleClass('info-stand__photo--active')
+})
