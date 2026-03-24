@@ -55,8 +55,8 @@ $('.info-stand__print').click(function() {
     // подумать
     var file = $(this).attr('data-file');
     // console.log(window.location.pathname);
-    // var location = window.location.pathname;
-    // file = location + file;
+    var location = 'https://groms12.github.io/panel-manager';
+    file = location + file;
 
     function printFileFromUrl(fileUrl) {
         // Создаем скрытый iframe
