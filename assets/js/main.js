@@ -57,30 +57,31 @@ $('.info-stand__print').click(function() {
     // console.log(window.location.pathname);
     var location = 'https://groms12.github.io/panel-manager';
     file = location + file;
+    var w = window.open(file); //Required full file path.
+    w.print();
+    // function printFileFromUrl(fileUrl) {
+    //     // Создаем скрытый iframe
+    //     const iframe = document.createElement('iframe');
+    //     iframe.style.position = 'fixed';
+    //     iframe.style.right = '100%'; // Скрываем за пределами экрана
+    //     iframe.style.bottom = '100%';
+    //     iframe.style.border = 'none';
+    //     iframe.src = fileUrl;
 
-    function printFileFromUrl(fileUrl) {
-        // Создаем скрытый iframe
-        const iframe = document.createElement('iframe');
-        iframe.style.position = 'fixed';
-        iframe.style.right = '100%'; // Скрываем за пределами экрана
-        iframe.style.bottom = '100%';
-        iframe.style.border = 'none';
-        iframe.src = fileUrl;
+    //     // Ждем загрузки содержимого в iframe
+    //     iframe.onload = () => {
+    //         try {
+    //             // Вызываем диалог печати для содержимого iframe
+    //             iframe.contentWindow.print();
+    //         } catch (error) {
+    //             console.error('Ошибка печати:', error);
+    //             alert('Не удалось открыть диалог печати. Возможно, файл недоступен или поврежден.');
+    //         }
+    //     };
 
-        // Ждем загрузки содержимого в iframe
-        iframe.onload = () => {
-            try {
-                // Вызываем диалог печати для содержимого iframe
-                iframe.contentWindow.print();
-            } catch (error) {
-                console.error('Ошибка печати:', error);
-                alert('Не удалось открыть диалог печати. Возможно, файл недоступен или поврежден.');
-            }
-        };
-
-        document.body.appendChild(iframe);
-    }
-    printFileFromUrl(file);
+    //     document.body.appendChild(iframe);
+    // }
+    // printFileFromUrl(file);
 });
 
 $('.info-stand__scale').click(function() {
