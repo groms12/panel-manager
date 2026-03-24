@@ -53,12 +53,41 @@ $('.buttons>.btn').click(function() {
 
 $('.info-stand__print').click(function() {
     // подумать
-    $(this).preventDefault();
-    var file = $(this).attr('href');
-    var file2 = window.open(file);
-    file2.print();
+    var file = $(this).attr('data-file');
+
+    function printFileFromUrl(fileUrl) {
+        // Создаем скрытый iframe
+        const iframe = document.createElement('iframe');
+        iframe.style.position = 'fixed';
+        iframe.style.right = '100%'; // Скрываем за пределами экрана
+        iframe.style.bottom = '100%';
+        iframe.style.border = 'none';
+        iframe.src = fileUrl;
+
+        // Ждем загрузки содержимого в iframe
+        iframe.onload = () => {
+            try {
+                // Вызываем диалог печати для содержимого iframe
+                iframe.contentWindow.print();
+            } catch (error) {
+                console.error('Ошибка печати:', error);
+                alert('Не удалось открыть диалог печати. Возможно, файл недоступен или поврежден.');
+            }
+        };
+
+        document.body.appendChild(iframe);
+    }
+    printFileFromUrl(file);
 });
 
 $('.info-stand__scale').click(function() {
-    $(this).parent('.info-stand__actions').siblings('.info-stand__photo').toggleClass('info-stand__photo--active')
+    var photo = $(this).parent('.info-stand__actions').siblings('.info-stand__photo').children('img').attr('src');
+    var name = $(this).parent('.info-stand__actions').siblings('.info-stand__name').text();
+    $('.modal-stand__img>img').attr('src', photo);
+    $('.modal-stand__title').text(name);
+    $('.modal-stand').toggleClass('modal-stand--active');
+});
+
+$('.modal-stand__close').click(function() {
+    $('.modal-stand').toggleClass('modal-stand--active');
 })

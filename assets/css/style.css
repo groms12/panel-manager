@@ -423,6 +423,18 @@ a {
 }
 .info-stand__select {
   margin-bottom: 16px;
+  position: relative;
+  max-width: fit-content;
+}
+.info-stand__select::after {
+  content: url("../img/info-stand/arrow-down.png");
+  position: absolute;
+  right: 8px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 16px;
+  height: 16px;
 }
 .info-stand__select select {
   font-family: "Inter";
@@ -436,6 +448,11 @@ a {
   border: none;
   outline: none;
   border-radius: 7px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  width: 350px;
 }
 .info-stand__cards {
   display: grid;
@@ -485,13 +502,42 @@ a {
   border: 2px solid #D9D9D9;
   width: 100%;
 }
-.info-stand__photo--active img {
-  position: absolute;
+
+.modal-stand {
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   margin: auto;
-  height: 80%;
-  width: auto;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  background-color: rgba(37, 44, 50, 0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  grid-gap: 16px;
+}
+.modal-stand img {
+  height: 70vh;
+}
+.modal-stand__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: -0.006em;
+  color: #FFFFFF;
+}
+.modal-stand__close {
+  cursor: pointer;
+}
+.modal-stand__close img {
+  width: 36px;
+  height: 36px;
+}
+.modal-stand--active {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */

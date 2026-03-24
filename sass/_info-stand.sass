@@ -18,6 +18,17 @@
             background-color: $orange
     &__select
         margin-bottom: 16px
+        position: relative
+        max-width: fit-content
+        &::after
+            content: url('../img/info-stand/arrow-down.png')
+            position: absolute
+            right: 8px
+            top: 0
+            bottom: 0
+            margin: auto
+            width: 16px
+            height: 16px
         select
             font-family: 'Inter'
             font-style: normal
@@ -30,6 +41,11 @@
             border: none
             outline: none
             border-radius: 7px
+            appearance: none
+            -webkit-appearance: none
+            -moz-appearance: none
+            cursor: pointer
+            width: 350px
     &__cards
         display: grid
         grid-template-rows: repeat(2, 1fr)
@@ -63,7 +79,7 @@
         font-size: 14px
         line-height: 120%
         letter-spacing: -0.006em
-        color: #252C32
+        color: $black
         margin-top: 4px
     &__photo
         margin-top: 4px
@@ -71,13 +87,35 @@
         img
             border: 2px solid #D9D9D9 
             width: 100%
-        &--active
-            img
-                position: absolute
-                top: 0
-                left: 0
-                right: 0
-                bottom: 0
-                margin: auto
-                height: 80%
-                width: auto
+.modal-stand
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    margin: auto
+    height: 100%
+    width: 100%
+    z-index: 100
+    background-color: rgba($black, .6)
+    display: none
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    grid-gap: 16px
+    img
+        height: 70vh
+    &__title
+        font-weight: 600
+        font-size: 40px
+        line-height: 120%
+        text-align: center
+        letter-spacing: -0.006em
+        color: $white
+    &__close
+        cursor: pointer
+        img
+            width: 36px
+            height: 36px
+    &--active
+        display: flex
